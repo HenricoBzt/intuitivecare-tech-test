@@ -1,0 +1,27 @@
+# .gitignore
+
+
+.venv/
+venv/
+env/
+venv*/
+*.pdf
+*.zip
+
+
+pdf_files/
+zip_files/
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+*.pyc
+*.pyo
+*.pyd
+
+
+pyvenv.cfg
+
+
+**/site-packages/
