@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-def buscar_pagina(url, headers):
+def find_page(url: str, headers:dict):
     try:
         response = requests.get(url, headers=headers, timeout=15)
         response.raise_for_status()
@@ -13,7 +13,7 @@ def buscar_pagina(url, headers):
     
 
 
-def extrair_links_pdf(soup: BeautifulSoup):
+def extract_links_pdf(soup: BeautifulSoup):
     getlink = soup.find_all("a", class_='internal-link', href=True)
     target_links = []
 
