@@ -8,6 +8,10 @@ venv*/
 *.pdf
 *.zip
 
+database/data_zips/demonstracoes_contabeis
+database/data_zips/operadoras
+database/data_etl/csv_processed/
+database/data_etl/extract/
 
 pdf_files/
 zip_files/
