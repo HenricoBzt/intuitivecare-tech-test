@@ -14,6 +14,8 @@ GROUP BY reg_ans
 ORDER BY total_despesas DESC
 LIMIT 10;
 
+
+--  Quais as 10 operadoras com maiores despesas nessa categoria no último ano?
 SELECT opera.nome_fantasia,
        demonstra.reg_ans,
        SUM(demonstra.vl_saldo_final - demonstra.vl_saldo_inicial) AS total_despesas
