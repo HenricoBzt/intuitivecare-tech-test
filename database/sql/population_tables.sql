@@ -1,4 +1,6 @@
 -- Importação de CSV para a tabela demonstracoes_contabeis
+-- Substitua 'C:/Users/henri/intuitivecare-tech-test/database/data_etl/csv_processed/' pelo caminho correto do seu arquivo CSV
+
 \copy demonstracoes_contabeis(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/henri/intuitivecare-tech-test/database/data_etl/csv_processed/1T2023.csv' WITH (FORMAT CSV, DELIMITER ';', HEADER, ENCODING 'UTF8');
 
 \copy demonstracoes_contabeis(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/henri/intuitivecare-tech-test/database/data_etl/csv_processed/2t2023.csv' WITH (FORMAT CSV, DELIMITER ';', HEADER, ENCODING 'UTF8');
