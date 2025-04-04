@@ -7,9 +7,10 @@ from pathlib import Path
 if __name__ == "__main__":
     BASE_DIR = Path(__file__).parent
     CSV_DIR = Path(BASE_DIR/"csv_files")
-    PDF_DIR = Path(BASE_DIR/"pdf/")
+    PDF_DIR = Path(BASE_DIR/"pdf")
     ZIP_DIR= Path(BASE_DIR/"zip_files")
     
+    PDF_DIR.mkdir(parents=True, exist_ok=True)
 
     CSV_PATH = Path(CSV_DIR/"Anexo_I_Rol_2021RN_465.2021_RN627L.2024.csv")
     PDF_PATH = Path(PDF_DIR/"Anexo_I_Rol_2021RN_465.2021_RN627L.2024.pdf")
