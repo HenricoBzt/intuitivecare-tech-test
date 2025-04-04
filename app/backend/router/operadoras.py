@@ -26,7 +26,7 @@ async def search_operadoras(
     limit: int = 10,
     ):
 
-    stmt_base = select(OperadorasModel)
+    stmt_base = select(OperadorasModel).order_by(OperadorasModel.nome_fantasia)
     stmt_query = stmt_base
 
     if query:
@@ -43,7 +43,7 @@ async def search_operadoras(
             status_code= HTTPStatus.NOT_FOUND,
             detail='Nenhuma operadora encontrada')
 
-    return {'operadoras': operadoras}
+    return {'results': operadoras} 
     
 
 
