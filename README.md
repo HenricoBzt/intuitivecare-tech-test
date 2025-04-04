@@ -101,14 +101,30 @@ docker run -p 8000:8000 intuitivecare-backend
  ## Web Scraping:  
    - Download automatizado de PDFs (Anexos I e II) do site da ANS.  
    - Compactação em arquivo ZIP.
+   -
+   ### RODAR O SCRIPT:
+   ```bash
+intuitive-tech-test/web_scraping/main.py
+```
+  
 
 ## Transformação de Dados**:  
    - Extração de tabelas de PDF para CSV.  
    - Tratamento de dados e normalização de colunas.
+ ### RODAR O SCRIPT:
+   ```bash
+intuitive-tech-test/data_transform/main.py
+```
+  
 
 ## Banco de Dados:  
    - Modelagem de tabelas para operadoras e demonstrações contábeis.  
    - Queries analíticas para identificar maiores despesas.
+ ### RODAR O SCRIPT:
+   ```bash
+intuitive-tech-test/database/main.py
+```
+  
 ---
 
 
