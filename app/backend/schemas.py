@@ -29,4 +29,4 @@ class OperadoraBase(MyBaseModel):
     data_registro_ans: date
 
 class OperadoraList(MyBaseModel):
-    operadoras: list[OperadoraBase]
+    results: list[OperadoraBase]
