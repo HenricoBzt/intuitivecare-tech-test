@@ -121,9 +121,32 @@ intuitive-tech-test/data_transform/main.py
    - Modelagem de tabelas para operadoras e demonstrações contábeis.  
    - Queries analíticas para identificar maiores despesas.
  ### RODAR O SCRIPT:
+ -main
    ```bash
+
 intuitive-tech-test/database/main.py
 ```
+-Para carregar os dados(Bulk Load) em sua database
+Confira se tem o psql Shell instalado
+```bash
+psql -U seu_usuario -d seu_banco_de_dados -f population_tables.sql
+```
+- Para Gerar tabelas (Operadoras, Demonstrações e Insigths )
+- 
+  Operadoras:
+  ```bash
+  psql -U seu_usuario -d seu_banco_de_dados -f operadoras_table.sql
+  ```
+  Demonstrações:
+  ```bash
+  psql -U seu_usuario -d seu_banco_de_dados -f demonstracoes_table.sql
+  ```
+
+  Insigths:
+  ```bash
+  psql -U seu_usuario -d seu_banco_de_dados -f insights_tables.sql
+  ```
+  
   
 ---
 
