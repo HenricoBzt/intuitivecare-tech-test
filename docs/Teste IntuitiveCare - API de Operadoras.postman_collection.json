@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "65093de2-22ce-45f1-ad44-8511a464e1c5",
+		"name": "Teste IntuitiveCare - API de Operadoras",
+		"description": "_API de busca de operadoras ativas da ANS_",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43740830",
+		"_collection_link": "https://henricobazante.postman.co/workspace/Henrico-Bazante's-Workspace~9b30cdc2-1573-4805-87ed-8601bcae9a6c/collection/43740830-65093de2-22ce-45f1-ad44-8511a464e1c5?action=share&source=collection_link&creator=43740830"
+	},
+	"item": [
+		{
+			"name": "Busca Operadoras Por termo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/operadoras/search/?query=saúde&skip=0&limit=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"operadoras",
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "saúde"
+						},
+						{
+							"key": "skip",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca Operadoras Inexistentes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/operadoras/search/?query=XYZ893@&skip=0&limit=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"operadoras",
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "XYZ893@"
+						},
+						{
+							"key": "skip",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca Todas Operadoras",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/operadoras/search/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"operadoras",
+						"search",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
