@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup
 from scraper import buscar_pagina, extrair_links_pdf
-from web_scraping.download_and_zip import download_pdf, to_zip
+from download_and_zip import download_pdf, to_zip
 
 load_dotenv()
 
